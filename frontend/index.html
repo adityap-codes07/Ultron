@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultron</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="assistant" aria-label="Ultron voice assistant">
+        <p class="eyebrow">ULTRON</p>
+        <button class="orb-button" id="orbButton" type="button" aria-label="Click to ask Ultron a question">
+          <span class="orb" aria-hidden="true"><span class="orb-shine"></span></span>
+        </button>
+        <p class="status" id="status">Click the orb to speak</p>
+        <p class="answer" id="answer" aria-live="polite"></p>
+        <form class="question-form" id="questionForm">
+          <input id="questionInput" type="text" placeholder="Or type a question..." autocomplete="off" />
+          <button type="submit" aria-label="Send question">&#8594;</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
